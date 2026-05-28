@@ -1,0 +1,250 @@
+body {
+    top: 0;
+    margin: 0;
+    left: 0;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: default;
+    padding-top: 195px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+/*carga*/
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/*Eliminar scrollbar*/
+
+html, body {
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    display: none;
+    background: transparent;
+}
+
+/* Asegura que ningún elemento muestre scroll */
+* {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    display: none;
+}
+
+
+
+/*inicio*/
+.titulos{
+    color: red;
+    text-align: center;
+}
+
+.cajita-info {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+    background-color: green;
+    height: 25px;
+    color: white;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1001;
+}
+
+.cajita-info a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.iconos {
+    width: 20px;
+}
+
+.cajita-info div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    height: 130px;
+    background-color: white;
+    padding: 10px;
+    z-index: 1000;
+}
+
+header a {
+    margin: 10px;
+    text-decoration: none;
+    color: blue;
+    font-size: 25px;
+}
+
+header a:hover {
+    transition: 0.5s;
+    color: green;
+}
+
+.logo {
+    width: 120px;
+    margin-left: 50px;
+    border-radius: 50px;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 175px;
+}
+
+.caja-enlaces{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+/*Seccion*/
+section{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 70px;
+}
+
+/*Formulario*/
+.formulario h1{
+    text-align: center;
+}
+
+.formulario form {
+  display: block;
+  padding: 15px;
+  padding-bottom: 25px;
+  border: solid green 2px;
+  border-radius: 50px;
+}
+
+.formulario form label{
+    vertical-align: top;
+    font-size: 20px;
+}
+
+.formulario textarea{
+    width: 250px;
+    height: 50px;
+    resize: none;
+}
+
+.formulario form input, select, textarea{
+    border: solid blue 1px;
+    padding: 5px;
+}
+
+.formulario button{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    border: none;
+    font-size: 15px;
+    border-radius: 50px;
+}
+
+.formulario button:hover{
+    transition: 0.5s;
+    background-color: green;
+    cursor: pointer;
+}
+
+/*Categoria y redes*/
+.categorias-redes{
+    padding: 15px;
+    border: solid green 2px;
+    border-radius: 50px;
+}
+
+.categoria{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.caja-red{
+   display: flex;
+   justify-content: center;
+   padding: 5px;
+   gap: 8px;
+}
+
+.redes{
+    width: 25px;
+    gap: 20px;
+}
+
+
+/*Mapa*/
+.mapa{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.mapa button{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    width: 150px;
+    text-align: center;
+    margin-top: 10px;
+    border: none;
+    font-size: 15px;
+    border-radius: 50px;
+}
+
+
+.mapa button:hover{
+    transition: 0.5s;
+    background-color: green;
+    cursor: pointer;
+}
+
+/*Footer*/
+footer{
+     width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: blue;
+    gap: 150px;
+    color: white;
+}
