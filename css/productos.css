@@ -1,0 +1,436 @@
+body {
+    top: 0;
+    margin: 0;
+    left: 0;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: default;
+    overflow-y: auto; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+    padding-top: 175px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+/*carga*/
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/*Eliminar scrollbar*/
+
+html, body {
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    display: none;
+    background: transparent;
+}
+
+/* Asegura que ningún elemento muestre scroll */
+* {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    display: none;
+}
+
+
+
+/*inicio*/
+.titulos{
+    color: red;
+    text-align: center;
+}
+
+.cajita-info {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+    background-color: green;
+    height: 25px;
+    color: white;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1001;
+}
+
+.cajita-info a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.iconos {
+    width: 20px;
+}
+
+.cajita-info div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    height: 130px;
+    background-color: white;
+    padding: 10px;
+    z-index: 1000;
+}
+
+header a {
+    margin: 10px;
+    text-decoration: none;
+    color: blue;
+    font-size: 25px;
+}
+
+header a:hover {
+    transition: 0.5s;
+    color: green;
+}
+
+.logo {
+    width: 120px;
+    margin-left: 50px;
+    border-radius: 50px;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 175px;
+}
+
+.caja-enlaces{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+
+/*Productos*/
+.categorias{
+    margin-left: 43px;
+    color: blue;
+    margin-bottom: 0;
+    padding-bottom: 0;  
+}
+
+
+.productos{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 20px;
+    margin-top: 0;  
+    padding-top: 30px;
+     
+}
+
+.caja-tarjeta{
+    display: flex;
+    background-color: white;
+}
+
+.tarjeta-carrusel, .tarjeta-prod {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px; 
+    align-items: center; 
+    gap: 5px; 
+    border: gray 5px;
+    min-width: 180px;
+    border-radius: 8px;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
+    justify-content: flex-start;
+}
+
+.imagen {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+.tarjeta-carrusel h3,
+.tarjeta-carrusel p,
+.tarjeta-carrusel .precio {
+    margin: 0;
+    padding: 0;
+}
+
+.tarjeta-carrusel h3 {
+    font-size: 14px;
+}
+
+.tarjeta-carrusel p {
+    font-size: 16px;
+    color: green;
+    font-weight: bold;
+}
+
+.agg-carrito{
+    color: white;
+    background-color: rgb(19, 59, 19);
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.agg-carrito:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    background-color: green;
+}
+
+
+/*Input de suscripcion y redes*/
+.caja-suscripcion{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.caja-suscripcion div{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.caja-suscripcion div input{
+    padding: 10px;
+    width: 250px;
+    height: 25px;
+    border-radius: 20px;
+    border-color: blue;
+}
+
+.caja-suscripcion div button{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+}
+
+.caja-suscripcion div button:hover{
+    transition: 0.5s;
+    background-color: green;
+}
+
+.redes{
+    width: 40px;
+}
+
+/*Carrito*/
+#carrito-flotante{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #111;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    text-decoration: none;
+}
+
+#carrito-cont{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+hr{
+    border: none;
+    height: 2px;
+    background-color: green;
+    margin: 20px 0;
+}
+
+/*footer*/
+.caja-datos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 200px;
+}
+
+.bancardimg{
+    width: 180px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+    height: 100px;
+}
+.copy{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: blue;
+    gap: 150px;
+}
+
+.copy p{
+    color: white;
+}
+
+.caja-datos div 
+.caja-datos h4, 
+.caja-datos h3{
+    color: blue;
+}
+
+.caja-datos div a{
+    text-decoration: none;
+    color: rgb(15, 15, 122);
+    font-size: 20px;
+}
+
+
+/*Carrito*/
+#carrito-flotante{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #111;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    text-decoration: none;
+    border: none;
+}
+
+#carrito-cont{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+hr{
+    border: none;
+    height: 2px;
+    background-color: green;
+    margin: 20px 0;
+}
+
+/*MODALES*/
+.modal-inicio{
+    left: 0;
+    top: 0;
+    margin: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: gray;
+    opacity: 90%;
+}
+
+.cont-modal-inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 80px;
+    width: 480px;
+    height: 250px;
+    padding: 15px;
+}
+
+.cont-modal-inicio img{
+    width: 180px;
+}
+
+span{
+    position: absolute; 
+    top: 125px; 
+    right: 290px; 
+    font-size: 25px; 
+    cursor: pointer;
+}
+
+.cont-modal-inicio{
+    color: blue;
+}
+
+/*extras*/
+#titulo-perfumes{
+    scroll-margin-top: 190px;
+}
+
+#titulo-medicamentos{
+    scroll-margin-top: 190px;
+}
+
+#titulo-maquillajes{
+    scroll-margin-top: 190px;
+}
+#titulo-cn{
+    scroll-margin-top: 190px;
+}

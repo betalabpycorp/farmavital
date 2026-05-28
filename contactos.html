@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/contactos.css">
+</head>
+<body>
+    <div class="cajita-info">
+        <div>
+        <img class="iconos" src="img/google-maps.png" alt="">
+        <h5>Delivery a toda central</h5>
+        </div>
+        <div>
+        <img class="iconos" src="img/delivery-bike.png" alt="">
+        <h5>Envíos gratis desde 300.000 Gs </h5>
+        </div>
+        <div>
+            <a href="">Ayuda</a>
+            <a href="https://www.google.com/maps/place/Av.+Gral.+Jos%C3%A9+Gervasio+Artigas,+Asunci%C3%B3n/@-25.268144,-57.599969,16z/data=!4m6!3m5!1s0x945da7b56c92c489:0x1b8e5c1d9d0de5c9!8m2!3d-25.2681437!4d-57.5999695!16s%2Fg%2F1q54w0rxg?hl=en&entry=ttu&g_ep=EgoyMDI2MDUyNi4wIKXMDSoASAFQAw%3D%3D">Local</a>
+        </div>
+    </div>
+
+    <!--Header-->
+    <header id="header">
+        <div>
+            <img class="logo" src="img/logo.png" alt="">
+        </div>
+        <div class="caja-enlaces">
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="contactos.html">Contacto</a>
+        </div>
+    </header>
+
+    <!--Contacto-->
+    <section class="seccion-contactos">
+        <div class="formulario">
+            <form>
+                <h1>Formulario de contacto</h1>
+                <label>Ingrese su nombre</label>
+                <input placeholder="Ejemplo: Juan" type="text"> <br><br>
+                <label>Ingrese su apellido</label>
+                <input placeholder="Ejemplo: Martinez" type="text"> <br><br>
+                <label>Ingrese su numero de celular</label>
+                <input placeholder="0971362758" type="number"> <br><br>
+                <label>Motivo de consulta</label>
+                <select>
+                    <option value="">Elija un motivo</option>
+                    <option value="">Consulta sobre disponibilidad de medicamentos</option>
+                    <option value="">Envío de receta médica</option>
+                    <option value="">Cotización o presupuesto</option>
+                    <option value="">Quejas o sugerencias</option>
+                    <option value="">otro</option>
+                </select> <br><br>
+                <label>Mensaje o detalle</label>
+                <textarea></textarea> <br><br>
+                <input type="checkbox">Acepto el tratamiento de mis datos personales para gestionar mi solicitud. <br><br>
+                <button ondblclick="abrirWhatssap()">Enviar</button>
+            </form>
+        </div>
+        <div class="categorias-redes">
+            <h1>Categorias y redes</h1>
+            <div class="categoria">
+                <a href="productos.html#titulo-medicamentos">Medicamentos</a>
+            <a href="productos.html#titulo-perfumes">Perfumes</a>
+            <a href="productos.html#titulo-maquillajes">Maquillajes</a>
+            <a href="productos.html#titulo-cn">Maternidad y Cuidados del Niño</a>
+            </div>
+            <div class="caja-red">
+                <a  href="https://www.gmail.com"><img class="redes" src="img/instagram.png" alt=""></a>
+                <a  href="https://www.instagram.com"><img class="redes" src="img/facebook.png" alt=""></a>
+                <a  href="https://www.facebook.com"><img class="redes" src="img/social.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <!--Ubicación de mapas-->
+    <div class="mapa">
+        <h2>Estamos ubicados sobre  Av. Artigas Asunción, Paraguay</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.0725845692214!2d-57.60484041954023!3d-25.268143620076977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da7b56c92c489%3A0x1b8e5c1d9d0de5c9!2sAv.%20Gral.%20Jos%C3%A9%20Gervasio%20Artigas%2C%20Asunci%C3%B3n!5e0!3m2!1sen!2spy!4v1779927507404!5m2!1sen!2spy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <button onclick="irUbi()">Ir a la Ubicación</button>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <p class="copyright">Copyright &copy; Farma Vital 2026. Todos los derechos reservados</p>
+        <p class="copyright">Desarrollado por Arianna y Gonzalo</p>
+    </footer>
+
+
+    <!--Scripts-->
+    <script src="js/enlaces.js"></script>
+    <script src="js/cambiosuave.js"></script>
+    <script src="js/tema.js"></script>
+</body>
+</html>
