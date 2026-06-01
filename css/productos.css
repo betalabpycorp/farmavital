@@ -335,6 +335,13 @@ hr{
     font-size: 20px;
 }
 
+.item h3 {
+    margin: 0;
+}
+
+.item p {
+    margin: 0;
+}
 
 /*Carrito*/
 #carrito-flotante{

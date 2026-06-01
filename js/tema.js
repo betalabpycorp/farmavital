@@ -16,7 +16,7 @@ temaStyle.textContent = `
     body.oscuro input[type="text"],
     body.oscuro input[type="number"],
     body.oscuro input[type="email"] { background-color: #2a2a2a !important; color: #f0f0f0 !important; border-color: #444 !important; }
-    body.oscuro .caja-suscripcion input { background-color: #2a2a2a !important; color: #f0f0f0 !important; }
+    body.oscuro .caja-suscripcion input { background-color:  !important; color: #f0f0f0 !important; }
     body.oscuro .formulario form { background-color: #1e1e1e !important; }
     body.oscuro .formulario label { color: #f0f0f0 !important; }
     body.oscuro h1, body.oscuro h2, body.oscuro h3,
